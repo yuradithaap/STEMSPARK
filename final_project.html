@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bunny Bites Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #faf6ef;
+        }
+
+        header {
+            text-align: center;
+            background: #ffd9b3;
+            padding: 20px;
+        }
+
+        #header-img {
+            width: 200px;
+            border-radius: 12px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        article {
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        article img {
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffd9b3;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img id="header-img" src="restaurant.jpg" alt="Restaurant Header Image">
+        <h1>Bunny Bites Restaurant</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order-form">Order Form</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- MENU SECTION -->
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <article>
+                <img src="carrot-soup.jpg" alt="Carrot Soup">
+                <h3>Carrot Cream Soup</h3>
+                <p>Sup wortel creamy yang lembut dan gurih, dibuat dari wortel segar pilihan. 
+                <i>Rp 25.000</i></p>
+            </article>
+
+            <article>
+                <img src="bunny-burger.jpg" alt="Bunny Burger">
+                <h3>Bunny Veggie Burger</h3>
+                <p>Burger sayuran khas rumah makan kami, disajikan dengan roti lembut dan saus spesial. 
+                <i>Rp 45.000</i></p>
+            </article>
+
+            <article>
+                <img src="matcha-latte.jpg" alt="Matcha Latte">
+                <h3>Matcha Latte</h3>
+                <p>Minuman matcha creamy dan menyegarkan, disajikan panas atau dingin. 
+                <i>Rp 30.000</i></p>
+            </article>
+        </section>
+
+        <!-- ORDER FORM SECTION -->
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+
+            <form>
+
+                <!-- Number inputs -->
+                <label for="carrot-soup">Carrot Cream Soup (Qty):</label>
+                <input type="number" id="carrot-soup" name="carrot-soup" min="0"><br><br>
+
+                <label for="burger">Bunny Veggie Burger (Qty):</label>
+                <input type="number" id="burger" name="burger" min="0"><br><br>
+
+                <label for="matcha">Matcha Latte (Qty):</label>
+                <input type="number" id="matcha" name="matcha" min="0"><br><br>
+
+
+                <!-- Radio buttons -->
+                <p><strong>Choose Your Side:</strong></p>
+
+                <label>
+                    <input type="radio" name="side" value="fries"> Fries
+                </label><br>
+
+                <label>
+                    <input type="radio" name="side" value="salad"> Fresh Salad
+                </label><br><br>
+
+
+                <!-- Checkbox -->
+                <p><strong>Add-ons:</strong></p>
+
+                <label>
+                    <input type="checkbox" name="extra-cheese"> Extra Cheese
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="extra-sauce"> Extra Sauce
+                </label><br><br>
+
+
+                <!-- Textarea -->
+                <label for="requests">Special Requests:</label><br>
+                <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Write your request here..."></textarea><br><br>
+
+
+                <!-- Submit -->
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with love by STEMSPARK</p>
+    </footer>
+
+</body>
+</html>
